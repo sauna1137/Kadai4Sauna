@@ -14,8 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet private weak var countUPButton: UIButton!
     @IBOutlet private weak var clearButton: UIButton!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
         countUPButton.layer.cornerRadius = countUPButton.frame.size.width/2
         clearButton.layer.cornerRadius = 20
     }
